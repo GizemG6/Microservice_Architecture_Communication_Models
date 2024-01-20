@@ -10,7 +10,7 @@ namespace Microservice_Architecture_Communication_Models.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            await Task.Delay(1000); //service1 is on hold
+            await Task.Delay(1000); // service1 is on hold
             return Ok(123);
         }
     }
