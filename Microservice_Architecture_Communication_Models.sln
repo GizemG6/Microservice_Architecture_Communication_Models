@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP_Service2", "Microservice_Architecture_Communication_Models\HTTP_Service2.csproj", "{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTTP", "HTTP", "{594286F0-A3D2-4337-BA0C-229C8EA8AAC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gRPC", "gRPC", "{698DBE8A-D190-4938-BC34-C440432F7544}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageBroker", "MessageBroker", "{A8D27CEC-B666-48B5-A7D8-38851161FBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP_Service1", "HTTP_Service1\HTTP_Service1.csproj", "{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DB04F4E-967A-4CAF-8D56-FFBD54247E46} = {594286F0-A3D2-4337-BA0C-229C8EA8AAC4}
+		{190AE184-6BCA-46E1-9288-A9CAA72D4C1A} = {594286F0-A3D2-4337-BA0C-229C8EA8AAC4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86677FDC-8250-4879-AD08-5AD300D4F47F}
+	EndGlobalSection
+EndGlobal
