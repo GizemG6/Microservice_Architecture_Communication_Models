@@ -1,7 +1,7 @@
 using Grpc.Core;
 using gRPC_Service;
 
-namespace gRPC_Service.Services
+namespace gRPC_Service2.Services
 {
     public class GreeterService : Greeter.GreeterBase
     {
@@ -13,11 +13,12 @@ namespace gRPC_Service.Services
 
         public override async Task SayHello(HelloRequest request, IServerStreamWriter<HelloReply> responseStream, ServerCallContext context)
         {
-            await Task.Run(() => 
+            await Task.Run(async () => 
             {
                 int count = 0;
                 while (++count <= 10)
                 {
+                    await Task.Delay(1000);
                     responseStream.WriteAsync(new HelloReply() { Message = $"Gönderilen mesaj : {count}" });
                 }
             });
