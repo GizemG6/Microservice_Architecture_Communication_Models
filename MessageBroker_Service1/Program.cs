@@ -1,2 +1,24 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using RabbitMQ.Client;
+using System.Text;
+
+ConnectionFactory factory = new();
+factory.Uri = new("");
+
+using IConnection connection = factory.CreateConnection();
+using IModel channel = connection.CreateModel();
+
+channel.ExchangeDeclare(exchange: "direct-excahnge-example", type: ExchangeType.Direct);
+
+while (true)
+{
+    Console.Write("Mesaj : ");
+    string message = Console.ReadLine();
+    byte[] byteMessage = Encoding.UTF8.GetBytes(message);
+
+    channel.BasicPublish(
+        exchange: "direct-exchange-example",
+        routingKey: "direct-queue-example",
+        body: byteMessage);
+}
+
+Console.Read();
