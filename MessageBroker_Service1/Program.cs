@@ -2,7 +2,7 @@
 using System.Text;
 
 ConnectionFactory factory = new();
-factory.Uri = new("");
+factory.Uri = new("amqps://hvvapiju:9Pc012L4bPljWg0Du3wEHNMFzwxknGBb@shark.rmq.cloudamqp.com/hvvapiju");
 
 using IConnection connection = factory.CreateConnection();
 using IModel channel = connection.CreateModel();
