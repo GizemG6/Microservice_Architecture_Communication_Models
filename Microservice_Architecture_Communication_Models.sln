@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP_Service2", "Microservice_Architecture_Communication_Models\HTTP_Service2.csproj", "{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTP_Service2", "Microservice_Architecture_Communication_Models\HTTP_Service2.csproj", "{6DB04F4E-967A-4CAF-8D56-FFBD54247E46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTTP", "HTTP", "{594286F0-A3D2-4337-BA0C-229C8EA8AAC4}"
 EndProject
@@ -11,11 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gRPC", "gRPC", "{698DBE8A-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageBroker", "MessageBroker", "{A8D27CEC-B666-48B5-A7D8-38851161FBC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTP_Service1", "HTTP_Service1\HTTP_Service1.csproj", "{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTP_Service1", "HTTP_Service1\HTTP_Service1.csproj", "{190AE184-6BCA-46E1-9288-A9CAA72D4C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC_Service1", "gRPC_Service1\gRPC_Service1.csproj", "{BB335170-2062-481C-BA7F-0E7BA953F137}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC_Service1", "gRPC_Service1\gRPC_Service1.csproj", "{BB335170-2062-481C-BA7F-0E7BA953F137}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC_Service2", "gRPC_Service\gRPC_Service2.csproj", "{91898FD7-AD1B-494B-A8D1-C17CA3EEE6A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC_Service2", "gRPC_Service\gRPC_Service2.csproj", "{91898FD7-AD1B-494B-A8D1-C17CA3EEE6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBroker_Service1", "MessageBroker_Service1\MessageBroker_Service1.csproj", "{CD04650B-B5A7-4234-9119-4B3DD2B9DD9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBroker_Service2", "MessageBroker_Service2\MessageBroker_Service2.csproj", "{56206E4D-4561-47BC-9E91-CA2CF971C9E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{91898FD7-AD1B-494B-A8D1-C17CA3EEE6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91898FD7-AD1B-494B-A8D1-C17CA3EEE6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91898FD7-AD1B-494B-A8D1-C17CA3EEE6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD04650B-B5A7-4234-9119-4B3DD2B9DD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD04650B-B5A7-4234-9119-4B3DD2B9DD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD04650B-B5A7-4234-9119-4B3DD2B9DD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD04650B-B5A7-4234-9119-4B3DD2B9DD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56206E4D-4561-47BC-9E91-CA2CF971C9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56206E4D-4561-47BC-9E91-CA2CF971C9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56206E4D-4561-47BC-9E91-CA2CF971C9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56206E4D-4561-47BC-9E91-CA2CF971C9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +60,8 @@ Global
 		{190AE184-6BCA-46E1-9288-A9CAA72D4C1A} = {594286F0-A3D2-4337-BA0C-229C8EA8AAC4}
 		{BB335170-2062-481C-BA7F-0E7BA953F137} = {698DBE8A-D190-4938-BC34-C440432F7544}
 		{91898FD7-AD1B-494B-A8D1-C17CA3EEE6A1} = {698DBE8A-D190-4938-BC34-C440432F7544}
+		{CD04650B-B5A7-4234-9119-4B3DD2B9DD9C} = {A8D27CEC-B666-48B5-A7D8-38851161FBC7}
+		{56206E4D-4561-47BC-9E91-CA2CF971C9E2} = {A8D27CEC-B666-48B5-A7D8-38851161FBC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86677FDC-8250-4879-AD08-5AD300D4F47F}
